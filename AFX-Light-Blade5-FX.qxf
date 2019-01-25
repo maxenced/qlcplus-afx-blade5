@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.0</Version>
+  <Author>Maxence Dunnewind</Author>
+ </Creator>
+ <Manufacturer>AFX Light</Manufacturer>
+ <Model>Blade5-FX</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="7">On</Capability>
+  <Capability Min="8" Max="255">Strobe from slow to fast</Capability>
+ </Channel>
+ <Channel Name="Movement">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">No function</Capability>
+  <Capability Min="8" Max="22">Move 1</Capability>
+  <Capability Min="23" Max="37">Move 2</Capability>
+  <Capability Min="38" Max="52">Move 3</Capability>
+  <Capability Min="53" Max="67">Move 4</Capability>
+  <Capability Min="68" Max="82">Move 5</Capability>
+  <Capability Min="83" Max="97">Move 6</Capability>
+  <Capability Min="98" Max="112">Move 7</Capability>
+  <Capability Min="113" Max="127">Move 8</Capability>
+  <Capability Min="128" Max="142">Move 9</Capability>
+  <Capability Min="143" Max="157">Move 10</Capability>
+  <Capability Min="158" Max="172">Move 11</Capability>
+  <Capability Min="173" Max="187">Move 12</Capability>
+  <Capability Min="188" Max="202">Move 13</Capability>
+  <Capability Min="203" Max="217">Move 14</Capability>
+  <Capability Min="218" Max="232">Move 15</Capability>
+  <Capability Min="233" Max="247">Move 16</Capability>
+  <Capability Min="248" Max="255">Sound active</Capability>
+ </Channel>
+ <Channel Name="Movement Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Speed from slow to fast</Capability>
+ </Channel>
+ <Channel Name="Color Chase">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="14">No Function</Capability>
+  <Capability Min="15" Max="35">Chase 1</Capability>
+  <Capability Min="36" Max="56">Chase 2</Capability>
+  <Capability Min="57" Max="76">Chase 3</Capability>
+  <Capability Min="77" Max="97">Chase 4</Capability>
+  <Capability Min="98" Max="117">Chase 5</Capability>
+  <Capability Min="118" Max="138">Chase 6</Capability>
+  <Capability Min="139" Max="159">Chase 7</Capability>
+  <Capability Min="160" Max="179">Chase 8</Capability>
+  <Capability Min="180" Max="200">Chase 9</Capability>
+  <Capability Min="201" Max="220">Chase 10</Capability>
+  <Capability Min="221" Max="241">Chase 11</Capability>
+  <Capability Min="242" Max="255">Chase 12</Capability>
+ </Channel>
+ <Channel Name="Chase Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Chase speed from slow to fast</Capability>
+ </Channel>
+ <Channel Name="Macro function">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="127">Nothing</Capability>
+  <Capability Min="128" Max="250">Reset</Capability>
+  <Capability Min="251" Max="255">Nothing</Capability>
+ </Channel>
+ <Channel Name="Color 1">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="24" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="25" Max="41" Preset="ColorMacro" Res1="#55aa00">Green</Capability>
+  <Capability Min="42" Max="57" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="58" Max="74" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="75" Max="90" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#55aa00">Red + Green</Capability>
+  <Capability Min="91" Max="107" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#0000ff">Red + Blue</Capability>
+  <Capability Min="108" Max="123" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#ffffff">Red + White</Capability>
+  <Capability Min="124" Max="140" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#0000ff">Green + Blue</Capability>
+  <Capability Min="141" Max="156" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#ffffff">Green + White</Capability>
+  <Capability Min="157" Max="173" Preset="ColorDoubleMacro" Res1="#0000ff" Res2="#ffffff">Blue + White</Capability>
+  <Capability Min="174" Max="189">Red + Green + Blue</Capability>
+  <Capability Min="190" Max="206" Preset="ColorMacro" Res1="#ffd965">Red + Green + White</Capability>
+  <Capability Min="207" Max="222" Preset="ColorMacro" Res1="#ff49ed">Red + Blue + White</Capability>
+  <Capability Min="223" Max="239" Preset="ColorMacro" Res1="#42ffda">Green + Blue + White</Capability>
+  <Capability Min="240" Max="255">Red + Green + Blue + White</Capability>
+ </Channel>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan speed" Preset="SpeedPanFastSlow"/>
+ <Channel Name="Pan Rotate">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="5">Stop</Capability>
+  <Capability Min="6" Max="126">Movement Forward Fast -&gt; Slow</Capability>
+  <Capability Min="127" Max="128">Stop</Capability>
+  <Capability Min="129" Max="249">Movement Reverse Slow -&gt; Fast</Capability>
+  <Capability Min="250" Max="255">Stop</Capability>
+ </Channel>
+ <Channel Name="Tilt 1" Preset="PositionTilt"/>
+ <Channel Name="Tilt 2" Preset="PositionTilt"/>
+ <Channel Name="Tilt 3" Preset="PositionTilt"/>
+ <Channel Name="Tilt 4" Preset="PositionTilt"/>
+ <Channel Name="Tilt 5" Preset="PositionTilt"/>
+ <Channel Name="Tilt 1 Speed" Preset="SpeedTiltFastSlow"/>
+ <Channel Name="Tilt 2 Speed" Preset="SpeedTiltFastSlow"/>
+ <Channel Name="Tilt 3 Speed" Preset="SpeedTiltFastSlow"/>
+ <Channel Name="Tilt 4 Speed" Preset="SpeedTiltFastSlow"/>
+ <Channel Name="Tilt 5 Speed" Preset="SpeedTiltFastSlow"/>
+ <Channel Name="Tilt 1 Rotate">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="5">Stop</Capability>
+  <Capability Min="6" Max="126">Movement forward fast -&gt; slow</Capability>
+  <Capability Min="127" Max="128">Stop</Capability>
+  <Capability Min="129" Max="249">Movement reverse slow -&gt; fast</Capability>
+  <Capability Min="250" Max="255">Stop</Capability>
+ </Channel>
+ <Channel Name="Tilt 2 Rotate">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="5">Stop</Capability>
+  <Capability Min="6" Max="126">Movement forward fast -&gt; slow</Capability>
+  <Capability Min="127" Max="128">Stop</Capability>
+  <Capability Min="129" Max="249">Movement reverse slow -&gt; fast</Capability>
+  <Capability Min="250" Max="255">Stop</Capability>
+ </Channel>
+ <Channel Name="Tilt 3 Rotate">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="5">Stop</Capability>
+  <Capability Min="6" Max="126">Movement forward fast -&gt; slow</Capability>
+  <Capability Min="127" Max="128">Stop</Capability>
+  <Capability Min="129" Max="249">Movement reverse slow -&gt; fast</Capability>
+  <Capability Min="250" Max="255">Stop</Capability>
+ </Channel>
+ <Channel Name="Tilt 4 Rotate">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="5">Stop</Capability>
+  <Capability Min="6" Max="126">Movement forward fast -&gt; slow</Capability>
+  <Capability Min="127" Max="128">Stop</Capability>
+  <Capability Min="129" Max="249">Movement reverse slow -&gt; fast</Capability>
+  <Capability Min="250" Max="255">Stop</Capability>
+ </Channel>
+ <Channel Name="Tilt 5 Rotate">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="5">Stop</Capability>
+  <Capability Min="6" Max="126">Movement forward fast -&gt; slow</Capability>
+  <Capability Min="127" Max="128">Stop</Capability>
+  <Capability Min="129" Max="249">Movement reverse slow -&gt; fast</Capability>
+  <Capability Min="250" Max="255">Stop</Capability>
+ </Channel>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt 1 Fine" Preset="PositionTiltFine"/>
+ <Channel Name="Tilt 2 Fine" Preset="PositionTiltFine"/>
+ <Channel Name="Tilt 3 Fine" Preset="PositionTiltFine"/>
+ <Channel Name="Tilt 4 Fine" Preset="PositionTiltFine"/>
+ <Channel Name="Tilt 5 Fine" Preset="PositionTiltFine"/>
+ <Channel Name="Color 2">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="24" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="25" Max="41" Preset="ColorMacro" Res1="#55aa00">Green</Capability>
+  <Capability Min="42" Max="57" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="58" Max="74" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="75" Max="90" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#55aa00">Red + Green</Capability>
+  <Capability Min="91" Max="107" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#0000ff">Red + Blue</Capability>
+  <Capability Min="108" Max="123" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#ffffff">Red + White</Capability>
+  <Capability Min="124" Max="140" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#0000ff">Green + Blue</Capability>
+  <Capability Min="141" Max="156" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#ffffff">Green + White</Capability>
+  <Capability Min="157" Max="173" Preset="ColorDoubleMacro" Res1="#0000ff" Res2="#ffffff">Blue + White</Capability>
+  <Capability Min="174" Max="189">Red + Green + Blue</Capability>
+  <Capability Min="190" Max="206" Preset="ColorMacro" Res1="#ffd965">Red + Green + White</Capability>
+  <Capability Min="207" Max="222" Preset="ColorMacro" Res1="#ff49ed">Red + Blue + White</Capability>
+  <Capability Min="223" Max="239" Preset="ColorMacro" Res1="#42ffda">Green + Blue + White</Capability>
+  <Capability Min="240" Max="255">Red + Green + Blue + White</Capability>
+ </Channel>
+ <Channel Name="Color 3">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="24" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="25" Max="41" Preset="ColorMacro" Res1="#55aa00">Green</Capability>
+  <Capability Min="42" Max="57" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="58" Max="74" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="75" Max="90" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#55aa00">Red + Green</Capability>
+  <Capability Min="91" Max="107" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#0000ff">Red + Blue</Capability>
+  <Capability Min="108" Max="123" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#ffffff">Red + White</Capability>
+  <Capability Min="124" Max="140" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#0000ff">Green + Blue</Capability>
+  <Capability Min="141" Max="156" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#ffffff">Green + White</Capability>
+  <Capability Min="157" Max="173" Preset="ColorDoubleMacro" Res1="#0000ff" Res2="#ffffff">Blue + White</Capability>
+  <Capability Min="174" Max="189">Red + Green + Blue</Capability>
+  <Capability Min="190" Max="206" Preset="ColorMacro" Res1="#ffd965">Red + Green + White</Capability>
+  <Capability Min="207" Max="222" Preset="ColorMacro" Res1="#ff49ed">Red + Blue + White</Capability>
+  <Capability Min="223" Max="239" Preset="ColorMacro" Res1="#42ffda">Green + Blue + White</Capability>
+  <Capability Min="240" Max="255">Red + Green + Blue + White</Capability>
+ </Channel>
+ <Channel Name="Color 4">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="24" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="25" Max="41" Preset="ColorMacro" Res1="#55aa00">Green</Capability>
+  <Capability Min="42" Max="57" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="58" Max="74" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="75" Max="90" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#55aa00">Red + Green</Capability>
+  <Capability Min="91" Max="107" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#0000ff">Red + Blue</Capability>
+  <Capability Min="108" Max="123" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#ffffff">Red + White</Capability>
+  <Capability Min="124" Max="140" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#0000ff">Green + Blue</Capability>
+  <Capability Min="141" Max="156" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#ffffff">Green + White</Capability>
+  <Capability Min="157" Max="173" Preset="ColorDoubleMacro" Res1="#0000ff" Res2="#ffffff">Blue + White</Capability>
+  <Capability Min="174" Max="189">Red + Green + Blue</Capability>
+  <Capability Min="190" Max="206" Preset="ColorMacro" Res1="#ffd965">Red + Green + White</Capability>
+  <Capability Min="207" Max="222" Preset="ColorMacro" Res1="#ff49ed">Red + Blue + White</Capability>
+  <Capability Min="223" Max="239" Preset="ColorMacro" Res1="#42ffda">Green + Blue + White</Capability>
+  <Capability Min="240" Max="255">Red + Green + Blue + White</Capability>
+ </Channel>
+ <Channel Name="Color 5">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="24" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="25" Max="41" Preset="ColorMacro" Res1="#55aa00">Green</Capability>
+  <Capability Min="42" Max="57" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="58" Max="74" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="75" Max="90" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#55aa00">Red + Green</Capability>
+  <Capability Min="91" Max="107" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#0000ff">Red + Blue</Capability>
+  <Capability Min="108" Max="123" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#ffffff">Red + White</Capability>
+  <Capability Min="124" Max="140" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#0000ff">Green + Blue</Capability>
+  <Capability Min="141" Max="156" Preset="ColorDoubleMacro" Res1="#55aa00" Res2="#ffffff">Green + White</Capability>
+  <Capability Min="157" Max="173" Preset="ColorDoubleMacro" Res1="#0000ff" Res2="#ffffff">Blue + White</Capability>
+  <Capability Min="174" Max="189">Red + Green + Blue</Capability>
+  <Capability Min="190" Max="206" Preset="ColorMacro" Res1="#ffd965">Red + Green + White</Capability>
+  <Capability Min="207" Max="222" Preset="ColorMacro" Res1="#ff49ed">Red + Blue + White</Capability>
+  <Capability Min="223" Max="239" Preset="ColorMacro" Res1="#42ffda">Green + Blue + White</Capability>
+  <Capability Min="240" Max="255">Red + Green + Blue + White</Capability>
+ </Channel>
+ <Mode Name="36 channels">
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Movement</Channel>
+  <Channel Number="3">Movement Speed</Channel>
+  <Channel Number="4">Color Chase</Channel>
+  <Channel Number="5">Chase Speed</Channel>
+  <Channel Number="6">Macro function</Channel>
+  <Channel Number="7">Color 1</Channel>
+  <Channel Number="8">Color 2</Channel>
+  <Channel Number="9">Color 3</Channel>
+  <Channel Number="10">Color 4</Channel>
+  <Channel Number="11">Color 5</Channel>
+  <Channel Number="12">Pan</Channel>
+  <Channel Number="13">Pan fine</Channel>
+  <Channel Number="14">Pan speed</Channel>
+  <Channel Number="15">Pan Rotate</Channel>
+  <Channel Number="16">Tilt 1</Channel>
+  <Channel Number="17">Tilt 1 Fine</Channel>
+  <Channel Number="18">Tilt 1 Speed</Channel>
+  <Channel Number="19">Tilt 1 Rotate</Channel>
+  <Channel Number="20">Tilt 2</Channel>
+  <Channel Number="21">Tilt 2 Fine</Channel>
+  <Channel Number="22">Tilt 2 Speed</Channel>
+  <Channel Number="23">Tilt 2 Rotate</Channel>
+  <Channel Number="24">Tilt 3</Channel>
+  <Channel Number="25">Tilt 3 Fine</Channel>
+  <Channel Number="26">Tilt 3 Speed</Channel>
+  <Channel Number="27">Tilt 3 Rotate</Channel>
+  <Channel Number="28">Tilt 4</Channel>
+  <Channel Number="29">Tilt 4 Fine</Channel>
+  <Channel Number="30">Tilt 4 Speed</Channel>
+  <Channel Number="31">Tilt 4 Rotate</Channel>
+  <Channel Number="32">Tilt 5</Channel>
+  <Channel Number="33">Tilt 5 Fine</Channel>
+  <Channel Number="34">Tilt 5 Speed</Channel>
+  <Channel Number="35">Tilt 5 Rotate</Channel>
+  <Head>
+   <Channel>7</Channel>
+   <Channel>16</Channel>
+   <Channel>17</Channel>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+  </Head>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>20</Channel>
+   <Channel>21</Channel>
+   <Channel>22</Channel>
+   <Channel>23</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>24</Channel>
+   <Channel>25</Channel>
+   <Channel>26</Channel>
+   <Channel>27</Channel>
+  </Head>
+  <Head>
+   <Channel>10</Channel>
+   <Channel>28</Channel>
+   <Channel>29</Channel>
+   <Channel>30</Channel>
+   <Channel>31</Channel>
+  </Head>
+  <Head>
+   <Channel>11</Channel>
+   <Channel>32</Channel>
+   <Channel>33</Channel>
+   <Channel>34</Channel>
+   <Channel>35</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="30 channels">
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Movement</Channel>
+  <Channel Number="3">Movement Speed</Channel>
+  <Channel Number="4">Color Chase</Channel>
+  <Channel Number="5">Chase Speed</Channel>
+  <Channel Number="6">Macro function</Channel>
+  <Channel Number="7">Color 1</Channel>
+  <Channel Number="8">Color 2</Channel>
+  <Channel Number="9">Color 3</Channel>
+  <Channel Number="10">Color 4</Channel>
+  <Channel Number="11">Color 5</Channel>
+  <Channel Number="12">Pan</Channel>
+  <Channel Number="13">Pan speed</Channel>
+  <Channel Number="14">Pan Rotate</Channel>
+  <Channel Number="15">Tilt 1</Channel>
+  <Channel Number="16">Tilt 1 Speed</Channel>
+  <Channel Number="17">Tilt 1 Rotate</Channel>
+  <Channel Number="18">Tilt 2</Channel>
+  <Channel Number="19">Tilt 2 Speed</Channel>
+  <Channel Number="20">Tilt 2 Rotate</Channel>
+  <Channel Number="21">Tilt 3</Channel>
+  <Channel Number="22">Tilt 3 Speed</Channel>
+  <Channel Number="23">Tilt 3 Rotate</Channel>
+  <Channel Number="24">Tilt 4</Channel>
+  <Channel Number="25">Tilt 4 Fine</Channel>
+  <Channel Number="26">Tilt 4 Rotate</Channel>
+  <Channel Number="27">Tilt 5</Channel>
+  <Channel Number="28">Tilt 5 Speed</Channel>
+  <Channel Number="29">Tilt 5 Rotate</Channel>
+  <Head>
+   <Channel>7</Channel>
+   <Channel>16</Channel>
+   <Channel>17</Channel>
+   <Channel>15</Channel>
+  </Head>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>20</Channel>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>21</Channel>
+   <Channel>22</Channel>
+   <Channel>23</Channel>
+  </Head>
+  <Head>
+   <Channel>10</Channel>
+   <Channel>24</Channel>
+   <Channel>25</Channel>
+   <Channel>26</Channel>
+  </Head>
+  <Head>
+   <Channel>11</Channel>
+   <Channel>27</Channel>
+   <Channel>28</Channel>
+   <Channel>29</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="24 channels">
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Movement</Channel>
+  <Channel Number="3">Movement Speed</Channel>
+  <Channel Number="4">Color Chase</Channel>
+  <Channel Number="5">Chase Speed</Channel>
+  <Channel Number="6">Macro function</Channel>
+  <Channel Number="7">Color 1</Channel>
+  <Channel Number="8">Color 2</Channel>
+  <Channel Number="9">Color 3</Channel>
+  <Channel Number="10">Color 4</Channel>
+  <Channel Number="11">Color 5</Channel>
+  <Channel Number="12">Pan</Channel>
+  <Channel Number="13">Pan Rotate</Channel>
+  <Channel Number="14">Tilt 1</Channel>
+  <Channel Number="15">Tilt 1 Rotate</Channel>
+  <Channel Number="16">Tilt 2</Channel>
+  <Channel Number="17">Tilt 2 Rotate</Channel>
+  <Channel Number="18">Tilt 3</Channel>
+  <Channel Number="19">Tilt 3 Rotate</Channel>
+  <Channel Number="20">Tilt 4</Channel>
+  <Channel Number="21">Tilt 4 Rotate</Channel>
+  <Channel Number="22">Tilt 5</Channel>
+  <Channel Number="23">Tilt 5 Rotate</Channel>
+  <Head>
+   <Channel>7</Channel>
+   <Channel>16</Channel>
+   <Channel>19</Channel>
+  </Head>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>20</Channel>
+   <Channel>23</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>24</Channel>
+   <Channel>27</Channel>
+  </Head>
+  <Head>
+   <Channel>10</Channel>
+   <Channel>28</Channel>
+   <Channel>31</Channel>
+  </Head>
+  <Head>
+   <Channel>11</Channel>
+   <Channel>32</Channel>
+   <Channel>35</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="7 channels">
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Movement</Channel>
+  <Channel Number="3">Movement Speed</Channel>
+  <Channel Number="4">Color Chase</Channel>
+  <Channel Number="5">Chase Speed</Channel>
+  <Channel Number="6">Macro function</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="10.5" Width="650" Height="180" Depth="250"/>
+  <Lens Name="Other" DegreesMin="8" DegreesMax="8"/>
+  <Focus Type="Head" PanMax="540" TiltMax="360"/>
+  <Technical PowerConsumption="90" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
